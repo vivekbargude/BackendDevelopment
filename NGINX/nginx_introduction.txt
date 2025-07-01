@@ -1,0 +1,128 @@
+### Introduction
+
+NGINX is a powerful web server and reverse proxy widely used in modern backend development. When combined with Java applications (e.g., using Spring Boot), it enhances performance, scalability, and security.
+
+---
+
+### 🔁 1. Reverse Proxy
+
+**Purpose:** Acts as an intermediary between the client and backend Java servers.
+
+**Benefits:**
+
+* Hides backend servers from the public
+* Load balances between multiple servers
+* Centralized SSL management
+
+**Example:**
+
+```
+Client → NGINX → Java App (port 8080)
+```
+
+---
+
+### 🌐 2. Web Server (Static Hosting)
+
+**Purpose:** Serves static files like HTML, CSS, JS, images.
+
+**Benefits:**
+
+* High performance for static content
+* Reduces load on backend services
+
+**Example:**
+Host frontend React/Vue build folder with NGINX.
+
+---
+
+### 🔐 3. SSL Termination (HTTPS)
+
+**Purpose:** Handles HTTPS connections and offloads SSL responsibilities.
+
+**Benefits:**
+
+* Simplifies SSL setup
+* Integrates with Let's Encrypt for free certificates
+
+**Example:**
+
+```
+Client → HTTPS (NGINX) → HTTP (Java Backend)
+```
+
+---
+
+### 🚦 4. Load Balancing
+
+**Purpose:** Distributes incoming traffic across multiple backend servers.
+
+**Benefits:**
+
+* Increases availability
+* Prevents a single server from being overloaded
+
+**Example:**
+
+```
+NGINX → Server 1 (Java)
+      → Server 2 (Java)
+```
+
+---
+
+### 🛡️ 5. Security and Rate Limiting
+
+**Purpose:** Adds protection against malicious users and abuse.
+
+**Benefits:**
+
+* Blocks suspicious IPs
+* Limits requests per client (DDoS protection)
+
+---
+
+### 🚪 6. Routing & URL Rewriting
+
+**Purpose:** Redirect or rewrite URLs to match routing rules.
+
+**Benefits:**
+
+* Clean, SEO-friendly URLs
+* Supports SPA frontends and multiple services
+
+**Example:**
+
+* `/api/*` → Java backend
+* `/` → Frontend static files
+
+---
+
+### 📦 7. Caching
+
+**Purpose:** Stores and serves cached responses.
+
+**Benefits:**
+
+* Reduces backend load
+* Improves response speed for frequent requests
+
+---
+
+### 💬 Summary Table
+
+| Use Case          | Description                              |
+| ----------------- | ---------------------------------------- |
+| Reverse Proxy     | Routes requests to backend servers       |
+| Static Hosting    | Serves HTML, CSS, JS, etc.               |
+| SSL Termination   | Handles HTTPS encryption                 |
+| Load Balancing    | Distributes traffic to multiple servers  |
+| Security          | Blocks malicious requests, rate limiting |
+| Routing/Redirects | Clean URL handling, rewrite rules        |
+| Caching           | Speeds up repeated requests              |
+
+---
+
+### Conclusion
+
+Using NGINX with Java-based applications provides a robust, scalable, and secure way to deploy modern web applications. It acts as a gatekeeper, load balancer, and performance booster for your backend services.
