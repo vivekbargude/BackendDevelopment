@@ -1,0 +1,33 @@
+🌱 Introduction to Spring Framework
+Spring is a powerful, feature-rich Java framework widely used for building enterprise-level applications. It provides a comprehensive infrastructure for developing Java applications, especially focusing on dependency injection (DI), aspect-oriented programming (AOP), and modular architecture.
+
+Key Features:
+
+Lightweight and modular
+
+Supports dependency injection and loose coupling
+
+Provides robust transaction management
+
+Integrates with various technologies (JPA, JMS, Security, etc.)
+
+Use Case Example:
+Creating complex business applications with layered architecture.
+
+
+
+🚀 Introduction to Spring Boot
+Spring Boot is an extension of the Spring Framework that simplifies the process of building and deploying production-ready standalone applications. It removes boilerplate configuration by offering opinionated defaults, embedded servers, and auto-configuration.
+
+Key Features:
+
+Embedded servers (Tomcat, Jetty)
+
+Auto-configuration based on dependencies
+
+Production-ready with built-in metrics and health checks
+
+Simplifies REST API development
+
+Use Case Example:
+Quickly building microservices or RESTful APIs without extensive configuration.
